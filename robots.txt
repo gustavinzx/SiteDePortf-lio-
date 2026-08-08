@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://giovannaloboportfolio.netlify.app/sitemap.xml

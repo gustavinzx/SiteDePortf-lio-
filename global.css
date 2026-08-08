@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bodoni+Moda:ital,opsz,wght@0,6..96,600;1,6..96,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+
+
+/* Fonte cursiva para o logo */
+.logo-giovanna {
+    font-family: 'Great Vibes', cursive !important;
+    font-weight: 400 !important;
+}
+
+/* Animação do título principal */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in-up {
+    animation: fadeInUp 1.2s ease-out forwards;
+}
+
+
+/* Efeito de Grão Analógico */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    pointer-events: none;
+    z-index: 9999;
+    opacity: 0.04;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Botão WhatsApp flutuante */
+.whatsapp-btn {
+    position: fixed;
+    bottom: max(30px, env(safe-area-inset-bottom, 30px));
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #ffb3c6;
+    color: #220a38;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    z-index: 900;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    text-decoration: none;
+}
+.whatsapp-btn:hover {
+    transform: scale(1.1);
+    background-color: #ff9fb6;
+    color: #220a38;
+}
+
+/* Custom Minimalist Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #180526;
+}
+::-webkit-scrollbar-thumb {
+    background: #5c0a35;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #ffb3c6;
+}

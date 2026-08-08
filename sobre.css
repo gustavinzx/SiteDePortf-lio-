@@ -1,0 +1,36 @@
+.sobre-mim {
+    display: flex; justify-content: center; align-items: center;
+    min-height: 100vh; padding: 120px 50px;
+}
+
+.sobre-container {
+    display: flex; align-items: center; justify-content: center;
+    gap: 80px; max-width: 1400px; width: 90%; margin: 0 auto;
+}
+
+.sobre-texto { flex: 1.5; }
+.sobre-texto h2 { font-family: 'Anton', sans-serif; font-size: 5rem; color: #ffb3c6; margin-bottom: 30px; }
+.sobre-texto p { font-size: 1.8rem; line-height: 1.5; margin-bottom: 25px; }
+
+.sobre-foto { flex: 1; max-width: 600px; }
+.sobre-foto img { width: 100%; border-radius: 20px; box-shadow: 0 25px 50px rgba(0,0,0,0.6); }
+
+
+@media (max-width: 1100px) {
+    .sobre-container { flex-direction: column; text-align: center; }
+    .sobre-texto h2 { font-size: 3.5rem; }
+}
+
+@media (max-width: 900px) {
+    .sobre-container {
+        flex-direction: column; /* Foto em cima, texto embaixo */
+        text-align: center;
+        gap: 40px;
+    }
+    .sobre-texto h2 {
+        font-size: 3rem;
+    }
+    .sobre-texto p {
+        font-size: 1.3rem;
+    }
+}
