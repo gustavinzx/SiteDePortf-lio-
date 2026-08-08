@@ -1,4 +1,4 @@
-# Site de Portfólio - Giovanna ❤️
+# Site de Portfólio - Giovanna
 
 Este é um site feito com muito carinho para guardar as fotos mais incríveis da minha fotógrafa favorita. 
 
